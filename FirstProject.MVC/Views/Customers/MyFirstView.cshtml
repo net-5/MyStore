@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MyStore.Domain.Entities.Customers>
+@{
+    ViewData["Title"] = "MyFirstView";
+}
+
+<h1>MyFirstView</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.City</div>
+    <div>@item.Phone</div>
+  
+}
